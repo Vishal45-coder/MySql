@@ -1,2 +1,0 @@
-use college;
-show tables;
