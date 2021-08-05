@@ -13,4 +13,19 @@ insert into Employee(id,Name,Age,Gender,Salary) values(567988,"Ross",31,"M",9060
 
 insert into Employee(id,Name,Age,Gender,Salary) values(567987,"Chandler",33,"M",70600);
 
-select* from Employee;
+/**
+Here we use (*) because we want to select all the attributes from the table Employee
+*/
+select* from Employee; 
+
+/**
+Here we use Name,id,Salary attribute because we want to get Name,id,Salary attribute from Employee table
+*/
+select Name from Employee;
+select id from Employee;
+select Salary from Employee;
+
+/**
+To select two attributes at a  time from a same table
+*/
+select Name,id from Employee;
