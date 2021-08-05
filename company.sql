@@ -4,6 +4,7 @@ create table Employee(emp_id int,Name varchar(20),Age int,Gender varchar(2),Sala
 
 create table Departments(emp_id int,Dept_id varchar(10),Dept_Name varchar(30));
 
+create table Project(Project_name varchar(20));
 show tables;
 
 
@@ -40,3 +41,20 @@ select Name,emp_id from Employee;
 This is used when we want to select all attributes from n tables
 */
 select* from Employee,Departments;
+
+/**
+To delete the whole table with structure
+*/
+drop table Project;
+
+/**
+To delete only values in the table
+*/
+truncate Employee;
+
+/**
+To rename a tablename
+*/
+rename table Employee to Employees;
+
+Select * from Employees;
