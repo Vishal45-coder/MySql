@@ -58,3 +58,51 @@ To rename a tablename
 rename table Employee to Employees;
 
 Select * from Employees;
+
+/**
+To add a coloumn we use alter function
+*/
+alter table Employees add column doj int;
+desc Employees;
+
+Select * from Employees,Departments;
+
+/**
+To add a coloumn we use alter function 
+use add function
+*/
+alter table Employees add column doj date;
+desc Employees;
+
+-- use modify function change the datatype of column
+alter table Employees modify column doj int;
+desc Employees;
+
+-- use rename function to change coloumn name
+alter table Employees rename column doj to dateofjoininig;
+desc Employees;
+
+-- use drop function delete a column
+alter table Employees drop column dateofjoininig;
+desc Employees;
+
+
+alter table Employees rename column emp_id to employee_id;
+desc Employees;
+
+alter table Employees rename column Name to FullName;
+desc Employees;
+
+alter table Employees rename column Gender to Sex;
+desc Employees;
+
+alter table Employees rename column Salary to Income;
+desc Employees;
+
+alter table Employees modify column Sex varchar(1);
+desc Employees;
+
+desc Departments;
+
+alter table Departments rename column emp_id to employee_id;
+desc Departments;
