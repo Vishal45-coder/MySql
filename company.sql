@@ -106,3 +106,24 @@ desc Departments;
 
 alter table Departments rename column emp_id to employee_id;
 desc Departments;
+
+-- to delete a similar attributes from a table
+delete from Departments where employee_id=567893;
+select * from Departments;
+
+/** 
+update a value in table set the value and conditions table
+if there is no condition it will update the whole coloumn
+*/
+update Departments set Dept_name="Sarcasm" where employee_id=567897;
+select * from Departments;
+
+update Employees set FullName="RossDino" where FullName="Ross";
+select * from Employees;
+
+-- There is no condition so it will update the whole coloum of Sex from M to F
+update Employees set Sex="F";
+Select * from Employees;
+
+update Employees set Sex="M";
+Select * from Employees;
