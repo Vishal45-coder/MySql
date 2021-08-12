@@ -42,15 +42,16 @@ This is used when we want to select all attributes from n tables
 */
 select* from Employee,Departments;
 
-/**
-To delete the whole table with structure
-*/
-drop table Project;
 
 /**
 To delete only values in the table
 */
-truncate Employee;
+truncate Project;
+
+/**
+To delete the whole table with structure
+*/
+drop table Project;
 
 /**
 To rename a tablename
@@ -127,3 +128,7 @@ Select * from Employees;
 
 update Employees set Sex="M";
 Select * from Employees;
+
+Select Income from Employees where employee_id=567983 && FullName="Joey";
+
+Select Income from Employees where FullName="RossDino" || employee_id=567983 ;
