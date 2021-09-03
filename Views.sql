@@ -36,3 +36,5 @@ select * from VirtualDepartments;
 select * from VirtualEmploy,VirtualDepartments;
 
 drop view VirtualEmploy;
+
+Select * from VirtualEmploy,VirtualDepartments where emp_id=10549;
